@@ -1,0 +1,13 @@
+[package]
+name = "rlstats-rs"
+version = "0.1.0"
+authors = ["Scetch <lucierbrandon@gmail.com>"]
+
+[lib]
+name = "rlstats"
+
+[dependencies]
+reqwest = "0.7.3"
+serde = "1.0.15"
+serde_derive = "1.0.15"
+serde_json = "1.0.3"

@@ -1,13 +1,14 @@
 [package]
 name = "rlstats-rs"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Scetch <lucierbrandon@gmail.com>"]
 description = "API wrapper for https://rocketleaguestats.com/"
 documentation = "https://docs.rs/rlstats-rs"
 repository = "https://github.com/Scetch/rlstats-rs"
 license = "MIT/Apache-2.0"
+readme = "README.md"
 
-keywords = ["rocketleague", "stats", "rocketleaguestats"]
+keywords = ["rocketleague", "rocket-league", "stats", "rocketleaguestats"]
 categories = ["api-bindings"]
 
 [lib]

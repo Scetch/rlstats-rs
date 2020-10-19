@@ -1,7 +1,8 @@
+use serde::{Deserialize, Serialize};
 use std::collections::BTreeMap;
 
 /// A possible json error.
-/// 
+///
 /// See http://documentation.rocketleaguestats.com/#response-codes
 #[derive(Debug, Deserialize)]
 pub struct ResponseCode {
@@ -13,7 +14,7 @@ pub struct ResponseCode {
 #[derive(Clone, Debug, Deserialize)]
 pub struct Platform {
     /// Some known IDs:
-    /// 
+    ///
     /// * 1 is Steam
     /// * 2 is PS4
     /// * 3 is XboxOne
@@ -31,7 +32,7 @@ pub struct Season {
     #[serde(rename = "startedOn")]
     pub started_on: i64,
     /// This is a unix timestamp.
-    /// 
+    ///
     /// This field will be `None` if the season has not yet ended.
     #[serde(rename = "endedOn")]
     pub ended_on: Option<i64>,
@@ -62,9 +63,9 @@ pub struct Playlist {
 #[derive(Debug, Deserialize)]
 pub struct Tier {
     /// Increments for every tier and sub-tier.
-    /// 
+    ///
     /// Example:
-    /// 
+    ///
     /// ```no-run
     /// [
     ///     Tier {
@@ -135,7 +136,7 @@ pub struct RankedData {
 }
 
 /// A RocketLeague player.
-/// 
+///
 /// Players will only exist if they have scored at least one goal.
 #[derive(Debug, Deserialize)]
 pub struct Player {

@@ -1,12 +1,13 @@
 [package]
 name = "rlstats-rs"
-version = "0.1.1"
-authors = ["Scetch <lucierbrandon@gmail.com>"]
+version = "0.1.2"
+authors = ["Scetch <me@scet.ch>"]
 description = "API wrapper for https://rocketleaguestats.com/"
 documentation = "https://docs.rs/rlstats-rs"
 repository = "https://github.com/Scetch/rlstats-rs"
 license = "MIT/Apache-2.0"
 readme = "README.md"
+edition = "2018"
 
 keywords = ["rocketleague", "rocket-league", "stats", "rocketleaguestats"]
 categories = ["api-bindings"]
@@ -15,6 +16,6 @@ categories = ["api-bindings"]
 name = "rlstats"
 
 [dependencies]
-reqwest = "0.8.5"
-serde = "1.0.53"
-serde_derive = "1.0.53"
+reqwest = { version = "0.10", features = ["blocking", "json"] }
+serde = { version = "1", features = [ "derive" ] }
+serde_json = "1"
